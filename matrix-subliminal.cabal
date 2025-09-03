@@ -1,0 +1,25 @@
+cabal-version:        3.0
+name:                 matrix-subliminal
+version:              0.1.0.0
+license:              MIT
+license-file:         LICENSE
+author:               Mirko Westermeier
+maintainer:           mirko@westermeier.de
+build-type:           Simple
+category:             Graphics
+synopsis:             Matrix screen with subliminal messages
+description:          Matrix screen with subliminal messages
+homepage:             https://github.com/memowe/matrix-subliminal
+bug-reports:          https://github.com/memowe/matrix-subliminal/issues
+
+source-repository head
+  type:               git
+  branch:             main
+  location:           https://github.com/memowe/matrix-subliminal.git
+
+executable matrix-subliminal
+  default-language:   GHC2021
+  ghc-options:        -Wall
+  build-depends:      base
+  hs-source-dirs:     .
+  main-is:            matrix-subliminal.hs
