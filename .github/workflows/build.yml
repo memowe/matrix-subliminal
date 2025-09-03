@@ -1,0 +1,17 @@
+name: Haskell CI
+
+on: [push, pull_request, workflow_dispatch]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up GHC
+        uses: haskell-actions/setup@v2
+      - name: Install dependencies
+        run: cabal build --only-dependencies
+      - name: Build
+        run: cabal build

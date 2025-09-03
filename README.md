@@ -2,6 +2,8 @@
 
 Matrix screen with subliminal messages
 
+[![Haskell CI](https://github.com/memowe/matrix-subliminal/actions/workflows/build.yml/badge.svg)](https://github.com/memowe/matrix-subliminal/actions/workflows/build.yml)
+
 ## Run
 
 ```bash
