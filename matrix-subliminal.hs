@@ -1,4 +1,6 @@
 module Main where
 
+import System.Environment
+
 main :: IO ()
-main = putStrLn "matrix!"
+main = mapM_ putStrLn =<< getArgs
