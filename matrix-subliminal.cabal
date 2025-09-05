@@ -20,6 +20,6 @@ source-repository head
 executable matrix-subliminal
   default-language:   GHC2021
   ghc-options:        -Wall
-  build-depends:      base
+  build-depends:      base, optparse-applicative
   hs-source-dirs:     .
   main-is:            matrix-subliminal.hs
