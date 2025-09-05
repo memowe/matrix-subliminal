@@ -8,7 +8,7 @@ maintainer:           mirko@westermeier.de
 build-type:           Simple
 category:             Graphics
 synopsis:             Matrix screen with subliminal messages
-description:          Matrix screen with subliminal messages
+description:          Terminal matrix screen with subliminal messages
 homepage:             https://github.com/memowe/matrix-subliminal
 bug-reports:          https://github.com/memowe/matrix-subliminal/issues
 
@@ -20,6 +20,7 @@ source-repository head
 executable matrix-subliminal
   default-language:   GHC2021
   ghc-options:        -Wall
-  build-depends:      base, optparse-applicative
+  build-depends:      base >= 4.18 && < 5
+                    , optparse-applicative >= 0.18.1.0 && < 1
   hs-source-dirs:     .
   main-is:            matrix-subliminal.hs

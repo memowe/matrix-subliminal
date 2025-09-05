@@ -12,6 +12,7 @@ jobs:
             ~/.cabal/store
             dist-newstyle
           key: cabal-${{ hashFiles('**/*.cabal', '**/cabal.project', '**/cabal-project.freeze') }}
+          restore-keys: cabal-
       - uses: haskell-actions/setup@v2
       - run: cabal build --only-dependencies
       - run: cabal build
